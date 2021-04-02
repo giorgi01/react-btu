@@ -1,0 +1,41 @@
+.btn-primary-red {
+    color: white;
+    background-color: red;
+    border-color: white;
+}
+
+.btn-primary-green {
+    color: white;
+    background-color: green;
+    border-color: white;
+}
+
+.btn-primary-blue {
+    color: white;
+    background-color: blue;
+    border-color: white;
+}
+
+.btn-primary-pink {
+    color: rgb(119, 119, 119);
+    background-color: pink;
+    border-color: white;
+}
+
+.btn-primary-yellow {
+    color: rgb(119, 119, 119);
+    background-color: yellow;
+    border-color: white;
+}
+
+.btn-primary-orange {
+    color: rgb(119, 119, 119);
+    background-color: orange;
+    border-color: white;
+}
+
+.btn-primary-purple {
+    color: white;
+    background-color: purple;
+    border-color: white;
+}

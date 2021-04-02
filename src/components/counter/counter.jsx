@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Button from '../ui/'
 import Greeting from '../greeting'
-
+import Theme from '../theme'
 
 
 function Counter(props) {
@@ -15,12 +15,10 @@ function Counter(props) {
       setCount(count + num);
     }
     
-    const showGreeting = count < 15 && count > -15;
-  
     return (
       <div className="row counter-container">
-        {showGreeting ? (<Greeting title="Counter" description={count} />) : ''}
-        <div className="col-12 d-flex">
+        <Theme color='red' text={count}/>
+        <div className="col-12">
           <Button type='button' className='btn btn-danger' onClick={() => setCounter(-100)} text='-100'/> 
         </div>
         <div className="col-12">
@@ -41,6 +39,7 @@ function Counter(props) {
         <div className="col-12">
           <Button type='button' className='btn btn-danger' onClick={() => setCounter(+100)} text='+100'/>  
         </div>
+        <Greeting title="Counter" description={count} />
       </div>
     );
 }

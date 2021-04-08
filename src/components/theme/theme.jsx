@@ -41,7 +41,7 @@ class Theme extends React.Component {
                 </li>
             </ul>
             <div style={{backgroundColor: this.state.color}} >
-                  {this.state.text}
+                  {this.props.text}
             </div>
         </div>
        );

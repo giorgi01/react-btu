@@ -1,14 +1,12 @@
-import "./welcome.css";
+import './welcome.css';
 
 function Welcome({ color, message }) {
-  const colors = ["red", "black", "gray"];
+  const colors = ['red', 'black', 'gray'];
 
   const renderError = () => {
     return (
       <div className="alert alert-danger">
-        <p>
-          ERROR_MESSAGE
-        </p>
+        <p>ERROR_MESSAGE</p>
       </div>
     );
   };
@@ -16,7 +14,7 @@ function Welcome({ color, message }) {
   const renderSuccess = () => {
     return (
       <div className="row">
-        <h1 className={["fs-1", `text-${color}`].join(" ")}>{message}</h1>
+        <h1 className={['fs-1', `text-${color}`].join(' ')}>{message}</h1>
       </div>
     );
   };

@@ -17,7 +17,7 @@ class Theme extends React.Component {
   render() {
     return (
       <div>
-        <ul class="list-group list-group-horizontal-sm">
+        <ul className="list-group list-group-horizontal-sm">
           <li className="list-group-item">
             <Button
               text="Red"

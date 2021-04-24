@@ -1,0 +1,6 @@
+.nav-pills .active.bg-commentsPage {
+    background-color: #2077db;
+  }
+.nav-pills .active.bg-todosPage {
+    background-color: #2bf07d;
+  }

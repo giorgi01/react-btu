@@ -69,6 +69,7 @@ function AddNoteForm(props) {
           Completed
         </label>
       </div>
+      <div></div>
       <Button type="submit" text="Add Note" className="btn btn-primary" />
     </form>
   );

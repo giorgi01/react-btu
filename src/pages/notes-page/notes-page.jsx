@@ -4,12 +4,16 @@ import NotesList from '../../components/list/notes-list';
 function NotesPage(props) {
   return (
     <div className="row">
-      <h2>Notes Page</h2>
-      <div className="col-4">
-        <AddNoteForm />
+      <div className="column">
+        <h2>Todos Page</h2>
+        <div className="col-4">
+          <AddNoteForm />
+        </div>
       </div>
-      <div className="col-6">
-        <NotesList />
+      <div className="column">
+        <div className="row">
+          <NotesList />
+        </div>
       </div>
     </div>
   );

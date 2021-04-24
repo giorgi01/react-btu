@@ -5,32 +5,7 @@ export const NotesContext = React.createContext(null);
 NotesContext.displayName = 'NotesContext';
 
 function NotesProviderComponent({ children }) {
-  const [noteList, setNoteList] = useState([
-    {
-      description: 'description',
-      id: 4,
-      title: 'et porro tempora',
-      completed: true,
-    },
-    {
-      description: 'description',
-      id: 5,
-      title: 'laboriosam mollitia et enim quasi adipisci quia provident illum',
-      completed: false,
-    },
-    {
-      description: 'description',
-      id: 6,
-      title: 'qui ullam ratione quibusdam voluptatem quia omnis',
-      completed: false,
-    },
-    {
-      description: 'description',
-      id: 7,
-      title: 'illo expedita consequatur quia in',
-      completed: false,
-    },
-  ]);
+  const [noteList, setNoteList] = useState([]);
 
   const loadNoteList = async () => {
     const lst = await API_SERVICE.getNoteListAsync({ start: 57, limit: 15 });
@@ -43,7 +18,9 @@ function NotesProviderComponent({ children }) {
 
   const addNewNote = (newNote) => {
     const newNoteList = [...noteList, newNote];
-    setNoteList(newNoteList);
+    if(noteList){
+      setNoteList(newNoteList);
+    }
   };
 
   const onNoteItemClick = (noteId) => {

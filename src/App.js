@@ -1,14 +1,27 @@
 import './App.css';
+import { Switch, Route } from 'react-router';
 import NotesProvider from './contexts/NotesProvider';
-import HomePage from './pages/home-page'
 import NotesPage from './pages/notes-page';
+import Navigation from './components/navigation/navigation'
+
 
 function App() {
   return (
     <div className="container">
-        <NotesProvider>
-          <NotesPage />
-        </NotesProvider>
+        <Navigation />
+
+        <Switch>
+          <Route path="/todos">
+            <NotesProvider>
+              <NotesPage />
+            </NotesProvider>
+          </Route>
+
+          <Route path="/comments">
+            
+          </Route>
+
+        </Switch>
     </div>
   );
 }

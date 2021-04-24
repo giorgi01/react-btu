@@ -1,4 +1,4 @@
-## [Netlify link - click here](https://boring-yonath-2df007.netlify.app/todos)
+## [Netlify link - click here](https://boring-yonath-2df007.netlify.app)
 
 ## Available Scripts
 
